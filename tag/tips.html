@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>tips - @zytek</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="@zytek" />
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="@zytek"/>
+            <meta property="og:url" content="http://blog.nuxi.pl"/>
+            <meta property="og:description" content="@zytek"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://blog.nuxi.pl/theme/css/bootstrap.readable-old.min.css" type="text/css"/>
+    <link href="http://blog.nuxi.pl/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://blog.nuxi.pl/theme/css/pygments/solarizedlight.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://blog.nuxi.pl/theme/css/style.css" type="text/css"/>
+
+        <link href="http://blog.nuxi.pl/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="@zytek ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://blog.nuxi.pl/" class="navbar-brand">
+@zytek            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://blog.nuxi.pl/pages/about.html">
+                             About
+                          </a></li>
+                        <li >
+                            <a href="http://blog.nuxi.pl/category/posts.html">Posts</a>
+                        </li>
+                        <li >
+                            <a href="http://blog.nuxi.pl/category/tips.html">Tips</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://blog.nuxi.pl/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2015/tip-git-lines-of-code-alias.html">Git Tip of the Day: count number of lines of code in repository</a></h2>
+                <div class="summary"><p>How to count number of lines of code in a Git repository?
+Add this alias to your ~/.gitconfig</p>
+<div class="highlight"><pre>[alias]
+    loc = diff --stat 4b825dc642cb6eb9a060e54bf8d69288fbee4904
+</pre></div>
+
+
+<p>This shows diff against empty repository (<code>git hash-object -t tree /dev/null</code>)</p>
+<p>Now you can just type <code>git loc</code> and get an answer. This is nice as ...</p>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2015/tip-git-lines-of-code-alias.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2015/aws-tip-of-the-day-get-s3-disk-usage-per-bucket.html">AWS Tip Of The Day: Get S3 disk usage per bucket</a></h2>
+                <div class="summary"><p>Getting <em>disk usage</em> statistics for Amazon S3 buckets is not that easy.
+Things are quite simple when your objects count and data size is reasonable and by 
+reasonable I mean something around <strong>&lt; 10 TB</strong> and  <strong>&lt; 1000</strong> objects per bucket.</p>
+<p>You can either use <a href="https://github.com/bloomreach/s4cmd">s4cmd</a> (fast, multi threaded)</p>
+<div class="highlight"><pre>s4cmd du -r ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2015/aws-tip-of-the-day-get-s3-disk-usage-per-bucket.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2015/fix-elastisearch-stuck-with-unassigned-shards.html">Fix ElastiSearch stuck with unassigned shards</a></h2>
+                <div class="summary"><p>In case your ElasticSearch cluster is stuck with unassigned shards you might want to try rerouting them to some other node.</p>
+<div class="highlight"><pre>curl -XGET http://localhost:9200/_cat/shards <span class="p">|</span> grep UNASSIGNED <span class="p">|</span> awk <span class="s1">&#39;{print $1 &quot; &quot; $2}&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> -r index shard<span class="p">;</span> <span class="k">do</span>
+
+    <span class="nb">echo</span> <span class="s2">&quot;Rerouting shard </span><span class="nv">$shard</span><span class="s2"> from index </span><span class="nv">$index</span><span class="s2">&quot;</span>
+    curl -XPOST <span class="s1">&#39;localhost ...</span></pre></div>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2015/fix-elastisearch-stuck-with-unassigned-shards.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2013/tip-osx-gdb-maverics.html">OS X Tip of the Day: Getting GDB back on Maverics</a></h2>
+                <div class="summary"><p>XCode on Maverics switched to LLDB and CLANG. Although this is exciting news, it
+screwed some utils that assume <code>gdb</code> is available on your system. Well, it is
+not - even if you had installed Command Line Tools. Fortunately, your local
+brewery came to the rescue. Assuming you have installed <a href="http://brew.sh">Homebrew ...</a></p>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2013/tip-osx-gdb-maverics.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2013/tip-lxc-network-issues.html">LXC Tip of the Day: network issues, connection lags</a></h2>
+                <div class="summary"><p>If you get strange network lags and issues while connecting to your LXC Container, be sure that a coworker didn't setup another container <strong>WITH THE SAME MAC ADDRESS</strong> as yours container.</p>
+<div class="highlight"><pre>lxc.network.hwaddr  = 00:FF:00:00:00:04
+</pre></div>
+
+
+<p>By the way, lxc-clone sux not taking care of ...</p>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2013/tip-lxc-network-issues.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2013/tip-lvm-cleaning-volume-groups.html">LVM Tip of the Day: cleaning volume groups after dirty eSATA storage removal</a></h2>
+                <div class="summary"><p>What if you trip on a eSATA storage cable and remove it dirty ?
+LVM will be unhappy:</p>
+<div class="highlight"><pre>[885874.582738] Buffer I/O error on device dm-3, logical block 26214384
+[885874.582766] Buffer I/O error on device dm-3, logical block 26214384
+[885874.582796] Buffer I/O error on device dm-3 ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2013/tip-lvm-cleaning-volume-groups.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://blog.nuxi.pl/2013/tip-osx-airplay-audio-glitches.html">OS X Tip of the Day: AirPlay audio glitches</a></h2>
+                <div class="summary"><p>Annoyed with AirPlay glitches when outputing Mac's sound to your Awesome Speakers connected to AppleTV? 
+Tired of rebooting to fix AirPlay problems? Angry because issue is known for at least a few months and still no fix from Apple?</p>
+<p>Well fear not! Open Terminal and type: </p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo pkill coreaudiod ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://blog.nuxi.pl/2013/tip-osx-airplay-audio-glitches.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="https://github.com/zytek"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                    <li class="list-group-item"><a href="http://pl.linkedin.com/in/zytek"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+                    <li class="list-group-item"><a href="http://twitter.com/wowzytek"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                    <li class="list-group-item"><a href="http://blog.nuxi.pl/feeds/all.atom.xml"><i class="fa fa-rss-square fa-lg"></i> rss</a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="http://blog.nuxi.pl/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                    </ul>
+                </li>    
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">          <p style="opacity: 0.5;"><small>  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="//i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+</small>
+             &copy; 2015 Jakub Paweł Głazik
+            </p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://blog.nuxi.pl/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://blog.nuxi.pl/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://blog.nuxi.pl/theme/js/respond.min.js"></script>
+
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'zytek'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
+    <!-- Google Analytics Universal -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-53251856-1', 'auto');
+        
+        ga('send', 'pageview', {
+            'page': '/tag/tips.html',
+            'title': 'tag/tips', 
+        });
+
+    </script>
+    <!-- End Google Analytics Universal Code -->
+</body>
+</html>
