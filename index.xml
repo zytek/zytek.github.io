@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>@zytek</title>
+    <link>https://blog.nuxi.pl/</link>
+    <description>Recent content on @zytek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Feb 2020 16:49:04 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.nuxi.pl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to know someone is your friend?</title>
+      <link>https://blog.nuxi.pl/2020/how-to-know-someone-is-your-friend/</link>
+      <pubDate>Mon, 17 Feb 2020 16:49:04 +0100</pubDate>
+      
+      <guid>https://blog.nuxi.pl/2020/how-to-know-someone-is-your-friend/</guid>
+      <description>You can tell them bad news. And they listen. They won’t tell you why you are stupid and why that bad thing happened to you. Or how something worse has happened to them once. Or someone they know.
+You can tell them good news. And they will help you celebrate. They will be happy for you and your success.
+If something good happens to you and you are afraid to tell them — or you tell just half the truth, marginalising your success — that’s bad.</description>
+    </item>
+    
+    <item>
+      <title>Successful Devops Implementation for Small Teams - a True Story</title>
+      <link>https://blog.nuxi.pl/2019/successful-devops-implementation-for-small-teams-a-true-story/</link>
+      <pubDate>Thu, 14 Mar 2019 15:05:38 +0100</pubDate>
+      
+      <guid>https://blog.nuxi.pl/2019/successful-devops-implementation-for-small-teams-a-true-story/</guid>
+      <description>&lt;p&gt;I have published slides from my talk about implementation of DevOps
+practices in &lt;a href=&#34;https://cosmose.co&#34;&gt;Cosmose&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This speech outlines some lessons learned.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.nuxi.pl/about/</link>
+      <pubDate>Thu, 14 Mar 2019 14:18:38 +0100</pubDate>
+      
+      <guid>https://blog.nuxi.pl/about/</guid>
+      <description>Hi, I&#39;m Jacob, or more officially &amp;ndash; Jakub P. Głazik &amp;ndash; going by @zytek handle in some places.
+I&#39;m an Infrastructure Engineer, specialising in AWS, Kubernetes and glueing things together.
+Things I like:
+ .__h_instagram.card { font-family: -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif; font-size: 14px; border: 1px solid rgb(219, 219, 219); padding: 0; margin-top: 30px; } .__h_instagram.card .card-header, .__h_instagram.card .card-body { padding: 10px 10px 10px; } .__h_instagram.card img { width: 100%; height: auto; }  purrandfurious   View More on Instagram   purrandfurious   View More on Instagram   </description>
+    </item>
+    
+  </channel>
+</rss>

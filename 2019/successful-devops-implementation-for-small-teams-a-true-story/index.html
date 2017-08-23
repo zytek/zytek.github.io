@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta property="og:title" content="Successful Devops Implementation for Small Teams - a True Story">
+    
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2019-03-14">
+    
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://blog.nuxi.pl/2019/successful-devops-implementation-for-small-teams-a-true-story/">
+    <meta property="og:site_name" content="@zytek">
+    
+    <meta property="og:tags" content="devops">
+    
+    <meta name="generator" content="Hugo 0.62.2" />
+    <title>Successful Devops Implementation for Small Teams - a True Story &middot; @zytek</title>
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://blog.nuxi.pl/css/style.css">
+    
+    <link href="https://blog.nuxi.pl/index.xml" rel="alternate" type="application/rss+xml" title="@zytek" />
+    
+    
+
+    
+    
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+				<a class="navbar-brand" href="https://blog.nuxi.pl/">@zytek</a>
+			
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				
+				
+					<li><a href="https://blog.nuxi.pl/about/">About</a></li>
+				
+					<li><a href="https://blog.nuxi.pl/posts/">Posts</a></li>
+				
+					<li><a href="https://blog.nuxi.pl/talks/">Talks </a></li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+	<div id="menu-content" class="vertical-align">
+		
+			<h1 class="text-center"><a href="https://blog.nuxi.pl/">@zytek</a></h1>
+		
+		
+		
+			<small class="text-center center-block">*nix 🐡, cloud ⛈, sysops ☔︎, devops 👨🏻‍💻</small>
+		
+		
+		
+		<div id="social" class="text-center">
+			
+				<a href="https://github.com/zytek"><i class="fa fa-github fa-2x"></i></a>
+			
+				<a href="https://twitter.com/wowzytek"><i class="fa fa-twitter fa-2x"></i></a>
+			
+				<a href="https://linkedin.com/in/zytek"><i class="fa fa-linkedin fa-2x"></i></a>
+			
+
+			
+		</div>
+		<div id="links" class="text-center">
+			
+			
+				<a href="https://blog.nuxi.pl/about/">About</a>
+			
+				<a href="https://blog.nuxi.pl/posts/">Posts</a>
+			
+				<a href="https://blog.nuxi.pl/talks/">Talks </a>
+			
+		</div>
+	</div>
+</div>
+
+		<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+			<div class="row">
+				<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+<main>
+	<header>
+		<h1>Successful Devops Implementation for Small Teams - a True Story</h1>
+	</header>
+
+	<article>
+		<p>I have published slides from my talk about implementation of DevOps
+practices in <a href="https://cosmose.co">Cosmose</a>.</p>
+<p>This speech outlines some lessons learned.</p>
+<!-- raw HTML omitted -->
+<h2 id="transcript">Transcript:</h2>
+<h4 id="successful-devops-implementation-for-small-teams-a-true-story">SUCCESSFUL DEVOPS IMPLEMENTATION FOR SMALL TEAMS: A TRUE STORY</h4>
+
+
+
+
+<style type="text/css">
+  .twitter-tweet {
+  font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  border-left: 4px solid #2b7bb9;
+  padding-left: 1.5em;
+  color: #555;
+}
+  .twitter-tweet a {
+  color: #2b7bb9;
+  text-decoration: none;
+}
+  blockquote.twitter-tweet a:hover,
+  blockquote.twitter-tweet a:focus {
+  text-decoration: underline;
+}
+</style>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">To make error is human. To propagate error to all server in automatic way is <a href="https://twitter.com/hashtag/devops?src=hash&amp;ref_src=twsrc%5Etfw">#devops</a>.</p>&mdash; DevOps Borat (@DEVOPS_BORAT) <a href="https://twitter.com/DEVOPS_BORAT/status/41587168870797312?ref_src=twsrc%5Etfw">February 26, 2011</a></blockquote>
+
+<h4 id="what-is-devops">What is DevOps?</h4>
+<p>Definition</p>
+<blockquote>
+<p>“A set of practices intended to reduce the time between committing a change to a system and the change being placed into normal production, while ensuring high quality”</p>
+<p>— <!-- raw HTML omitted -->Bass, Len; Weber, Ingo; Zhu, Liming. DevOps: A Software Architect's Perspective. ISBN 978-0134049847.<!-- raw HTML omitted --></p>
+</blockquote>
+<h4 id="its-not-a-new-thing-already-established-in-the-industry---tons-of-job-offerings-confirm-that">It’s not a new thing already established in the industry - tons of job offerings confirm that</h4>
+<ul>
+<li>
+<p>automation, automation, automation</p>
+</li>
+<li>
+<p>containers eeeeverywheeereee</p>
+</li>
+<li>
+<p>The Cloud (i.e. someone else’s computer)</p>
+</li>
+</ul>
+<h4 id="simple-test-are-you-devops-level-over-9000">Simple test: “are you DevOps level over 9000?”</h4>
+<ul>
+<li>
+<p>your answer for “how many servers do you have?” is “I have to check..”</p>
+</li>
+<li>
+<p>you do multiple production deployments each day</p>
+</li>
+<li>
+<p>your dev team can create new (micro)service along with all supporting components without any ticket for ops team</p>
+</li>
+<li>
+<p>you can terminate any random instance in your infrastructure and the environment will self-heal</p>
+</li>
+<li>
+<p>.. but let’s not even start with security related topics</p>
+</li>
+</ul>
+<h4 id="how-not-to-do-devops---donts">How not to do “DevOps” - DON'TS</h4>
+<ul>
+<li>
+<p>Post a job description for “DevOps Engineer” and hire a few</p>
+</li>
+<li>
+<p>Put them on an “on-call”</p>
+</li>
+<li>
+<p>Push away developers from directly interacting with the environment</p>
+</li>
+</ul>
+<h4 id="effect">Effect?</h4>
+<p>Apart from low velocity and quality you will get these:</p>
+<ul>
+<li>
+<p>“Hey, can you send me logs from my service?”</p>
+</li>
+<li>
+<p>“Heey, can you purge Redis for me on staging?”</p>
+</li>
+<li>
+<p>“Heeey, I clicked deploy on Jenkins and it’s stuck, HALP”</p>
+</li>
+<li>
+<p>“Heeeeeeeeeeeeeey….”</p>
+</li>
+</ul>
+<h4 id="lets-try-another-approach---dos">Let’s try another approach - DO'S</h4>
+<ul>
+<li>
+<p>Do enable developers</p>
+</li>
+<li>
+<p>Streamline deployment process</p>
+</li>
+<li>
+<p>Streamline infrastructure management</p>
+</li>
+<li>
+<p>Guide, advise, discuss</p>
+</li>
+<li>
+<p>Hide complexity, but not too much</p>
+</li>
+<li>
+<p>Treat yourself as a service provider - deliver products not tickets</p>
+</li>
+</ul>
+<h4 id="but-how-">BUT HOW ?!</h4>
+<h4 id="its-ok-to-hire-devops-engineer---brings-experience-and-specialized-focus">It’s ok to hire devops engineer - Brings experience and specialized focus</h4>
+<ul>
+<li>
+<p>Communication skills are super important here</p>
+</li>
+<li>
+<p>Tech requirements: good *nix skills, good google skills and sixth sense for sniffing bad practices</p>
+</li>
+<li>
+<p>Probably the first person to handle Security in your new startup</p>
+</li>
+</ul>
+<h4 id="starting-point">Starting point</h4>
+<h5 id="the-bad">The Bad</h5>
+<ul>
+<li>
+<p>Production environment: two servers, dozen microservices</p>
+</li>
+<li>
+<p>Everything spinned up manually through AWS Console</p>
+</li>
+<li>
+<p>Deployment meant ssh’ing to a server, downloading new docker image, stop+start (incurring downtime)</p>
+</li>
+<li>
+<p>Monitoring? Just cloudwatch logs</p>
+</li>
+</ul>
+<h5 id="the-good">The Good</h5>
+<ul>
+<li>
+<p>Spring Boot + Spring Cloud (Netflix)</p>
+</li>
+<li>
+<p>Dockerized, built on Jenkins</p>
+</li>
+<li>
+<p>Configured via environment variables</p>
+</li>
+<li>
+<p>Stateless</p>
+</li>
+<li>
+<p>Use of AWS</p>
+</li>
+<li>
+<p>Use of managed services</p>
+</li>
+<li>
+<p>Most important thing: competent development team, eager to innovate 🚀 ✅</p>
+</li>
+</ul>
+<h4 id="kubernetes---fixing-error-prone-deployments">Kubernetes - Fixing error prone deployments</h4>
+<ul>
+<li>
+<p>batteries-included approach</p>
+</li>
+<li>
+<p>documentation ○ courses, FAQs, examples</p>
+</li>
+<li>
+<p>popular</p>
+</li>
+<li>
+<p>reasonably sane ○ apart from Milicores concepts and a few others ;-)</p>
+</li>
+<li>
+<p>Lots of progress in the past ~2 years ○ stable ○ reliable ○ lots of know-how ○ lots of lessons learned ○ powerful CLI</p>
+</li>
+</ul>
+<h4 id="kubernetes-contd">Kubernetes cont’d</h4>
+<ul>
+<li>
+<p>Helm</p>
+</li>
+<li>
+<p>Spinnaker</p>
+</li>
+<li>
+<p>Jenkins integrations</p>
+</li>
+<li>
+<p>Operators for complex deployments</p>
+</li>
+<li>
+<p>Monitoring stack</p>
+</li>
+<li>
+<p>Cloud offerings (GKE, EKS, Azure) tons of tools on top of it Tons of tools on top of it</p>
+</li>
+</ul>
+<h4 id="still-not-a-silver-bullet">Still, not a silver bullet</h4>
+<h4 id="yaaaml-">YAAAML 😱</h4>
+<ul>
+<li>
+<p>200-400 lines of YAML to describe a service..</p>
+</li>
+<li>
+<p>Secrets management..</p>
+</li>
+<li>
+<p>Even with Helm, deployment is a complex command</p>
+</li>
+<li>
+<p>Tains, tolerations, affinity, heap vs total memory, exposing ports, scraping metrics .. and keep it all consistent across multitude of services</p>
+</li>
+<li>
+<p>Tooling versioning</p>
+</li>
+</ul>
+<h4 id="re-hide-complexity-but-not-too-much">Re: hide complexity, but not too much</h4>
+<ul>
+<li>
+<p>Jenkins deployment job is nice and all, up until it stops working</p>
+</li>
+<li>
+<p>How can you expect proficiency with Kubernetes / kubectl if all developers ever do is push a Run button?</p>
+</li>
+<li>
+<p>Enable them by making it easy to use CLI tools ○ Prepare Helm, helm-secrets, helm-diff, all along with binaries, configs and ./setup.sh script for easy installation ○ Create one template for all services, supporting most common configuration ○ Add yet another abstraction layer for most common tasks</p>
+</li>
+</ul>
+<h4 id="demo-qp-200-lines-of-bash-script-as-an-abstraction-layer-on-top-of-helm">Demo: qp ~200 lines of BASH script as an abstraction layer on top of Helm</h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="afterbefore">afterbefore</h4>
+<h4 id="devops--collaboration">DevOps == Collaboration</h4>
+<ul>
+<li>
+<p>Example: monitor performance of all microservices ○ Example stack: Prometheus via Prometheus Operator ○ Add Service Monitor objects to each deployment</p>
+</li>
+<li>
+<p>New <strong>application&lt;-&gt;platform</strong> contract emerged: just expose prometheus metrics on port N and you will see your service graphs on Grafana ○ Developers responsible for adjusting their services to obey the new contract, make domain specific dashboards</p>
+</li>
+<li>
+<p>Good tools helped here: Kubernetes made it easy to deploy the stack, Spring framework made it easy to expose metrics</p>
+</li>
+</ul>
+<h4 id="infrastructure-as-code---terraform--atlantis">Infrastructure as Code - Terraform + Atlantis</h4>
+<ul>
+<li>
+<p>Git-versioned infrastructure</p>
+</li>
+<li>
+<p>Migrate/Move or import existing resources</p>
+</li>
+<li>
+<p>Setup Atlantis for audited and peer-reviewed infrastructure changes</p>
+</li>
+<li>
+<p>Use the same tools to detect state drift (changes that were made outside of atlantis flow)</p>
+</li>
+<li>
+<p>Optionally remove user permissions so that changes must go through Pull Requests</p>
+</li>
+</ul>
+<h4 id="terraform-declarative-infrastructure-management">Terraform Declarative infrastructure management</h4>
+<ul>
+<li>
+<p>Define AWS resources ○ Readable syntax ○ Combine multiple resources into reusable module</p>
+</li>
+<li>
+<p>Plan ○ Compare definition with current state ○ Display detailed changeset</p>
+</li>
+<li>
+<p>Apply ○ Make changes to infrastructure ○ Record state</p>
+</li>
+<li>
+<p>Team-workflow supported ○ State in AWS S3 ○ Locks in DynamoDB</p>
+</li>
+</ul>
+<h4 id="atlantis-pull-requests-for-infrastructure">Atlantis Pull Requests for infrastructure</h4>
+<ol>
+<li>GitHub hook on each Pull Request to terraform repo</li>
+<li>Additional layer of locking so no other PR can touch the same parts of infrastructure</li>
+<li>Autoplan: show plan preview in PR comments</li>
+<li>Review &amp; Approve Pull Request</li>
+<li>Apply changes</li>
+<li>Remove locks and merge</li>
+</ol>
+<h4 id="demo">Demo?</h4>
+<blockquote>
+<p>If time permits ;-) If time won’t permit: shout out to my friend Szymon W. who made a nice blogpost about introducing terraform and atlantis across whole company: <a href="https://lab.getbase.com/terraform-base/">https://lab.getbase.com/terraform-base/</a></p>
+</blockquote>
+<h4 id="does-it-work">Does it work?</h4>
+<h4 id="from-my-own-experience">From my own experience</h4>
+<h5 id="cosmose">Cosmose</h5>
+<ul>
+<li>
+<p>One “devops engineer”, seven contributors to terraform repo in a month, eleven now</p>
+</li>
+<li>
+<p>10+ production deployments per day</p>
+</li>
+<li>
+<p>3x more microservices since I joined (~6 months)</p>
+</li>
+<li>
+<p>Infrastructure autoscaled 10x one time, when a dev wanted to “speed up his processing task” ;-)</p>
+</li>
+</ul>
+<h5 id="base--zendesk-sell">Base / Zendesk Sell</h5>
+<ul>
+<li>
+<p>Around 8 Ops and 42 (!) contributors to terraform repo</p>
+</li>
+<li>
+<p>30-50 deployments to prod daily</p>
+</li>
+<li>
+<p>High level of ownership in dev teams, including expertise in running databases (e.g. ElasticSearch, MySQL), building their own infrastructure stacks (QA Kubernetes)</p>
+</li>
+</ul>
+<h4 id="it-works">It works!</h4>
+<h4 id="thanks">Thanks!</h4>
+<p>Jakub P. Głazik <a href="mailto:zytek@nuxi.pl">zytek@nuxi.pl</a> github.com/zytek Questions are more than welcome</p>
+	</article>
+</main>
+
+<div id="bottom-nav" class="text-center center-block">
+	<a href=" https://blog.nuxi.pl/" class="btn btn-default"><i class="fa fa-home"></i> Home</a>
+</div>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+  
+  
+  <script src="https://blog.nuxi.pl//js/App.js"></script>
+  
+</body>
+</html>

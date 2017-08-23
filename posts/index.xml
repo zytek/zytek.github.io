@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on @zytek</title>
+    <link>https://blog.nuxi.pl/posts/</link>
+    <description>Recent content in Posts on @zytek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Feb 2020 16:49:04 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.nuxi.pl/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to know someone is your friend?</title>
+      <link>https://blog.nuxi.pl/2020/how-to-know-someone-is-your-friend/</link>
+      <pubDate>Mon, 17 Feb 2020 16:49:04 +0100</pubDate>
+      
+      <guid>https://blog.nuxi.pl/2020/how-to-know-someone-is-your-friend/</guid>
+      <description>You can tell them bad news. And they listen. They won’t tell you why you are stupid and why that bad thing happened to you. Or how something worse has happened to them once. Or someone they know.
+You can tell them good news. And they will help you celebrate. They will be happy for you and your success.
+If something good happens to you and you are afraid to tell them — or you tell just half the truth, marginalising your success — that’s bad.</description>
+    </item>
+    
+  </channel>
+</rss>

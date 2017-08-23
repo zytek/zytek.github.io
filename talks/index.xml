@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on @zytek</title>
+    <link>https://blog.nuxi.pl/talks/</link>
+    <description>Recent content in Talks on @zytek</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Mar 2019 15:05:38 +0100</lastBuildDate>
+    
+	<atom:link href="https://blog.nuxi.pl/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Successful Devops Implementation for Small Teams - a True Story</title>
+      <link>https://blog.nuxi.pl/2019/successful-devops-implementation-for-small-teams-a-true-story/</link>
+      <pubDate>Thu, 14 Mar 2019 15:05:38 +0100</pubDate>
+      
+      <guid>https://blog.nuxi.pl/2019/successful-devops-implementation-for-small-teams-a-true-story/</guid>
+      <description>&lt;p&gt;I have published slides from my talk about implementation of DevOps
+practices in &lt;a href=&#34;https://cosmose.co&#34;&gt;Cosmose&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This speech outlines some lessons learned.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.nuxi.pl/</loc>
+    <lastmod>2020-02-17T16:49:04+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/2020/how-to-know-someone-is-your-friend/</loc>
+    <lastmod>2020-02-17T16:49:04+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/posts/</loc>
+    <lastmod>2020-02-17T16:49:04+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/tags/devops/</loc>
+    <lastmod>2019-03-14T15:05:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/2019/successful-devops-implementation-for-small-teams-a-true-story/</loc>
+    <lastmod>2019-03-14T15:05:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/tags/</loc>
+    <lastmod>2019-03-14T15:05:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/talks/</loc>
+    <lastmod>2019-03-14T15:05:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/about/</loc>
+    <lastmod>2019-03-14T14:18:38+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.nuxi.pl/categories/</loc>
+  </url>
+  
+</urlset>
